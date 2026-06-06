@@ -28,4 +28,16 @@ app.get("/", (req, res) => {
   res.send("Backend API is running 🚀");
 });
 
+// Error-handling middleware (catches multer and other errors)
+app.use((err, req, res, next) => {
+  console.error("Unhandled error:", err);
+
+  // Multer errors have name 'MulterError'
+  if (err && err.name === "MulterError") {
+    return res.status(400).json({ message: err.message });
+  }
+
+  res.status(500).json({ message: err.message || "Internal server error" });
+});
+
 module.exports = app;
