@@ -83,7 +83,7 @@ function NotesHistory() {
                 </button>
                 {note.pdf && (
                   <a
-                    href={`http://localhost:5000/uploads/${note.pdf}`}
+                    href={`/api/uploads/${note.pdf}`}
                     target="_blank"
                     rel="noreferrer"
                     className="bg-cyan-500 hover:bg-cyan-600 text-slate-950 rounded-lg px-4 py-2 text-sm"

@@ -1,0 +1,19 @@
+{
+  "name": "ai-study-notes-app",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "serverless-http": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  }
+}

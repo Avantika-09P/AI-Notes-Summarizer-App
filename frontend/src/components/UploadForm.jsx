@@ -59,14 +59,10 @@ function UploadForm({ setSummary }) {
 
       formData.append("pdf", file);
 
-      const response =
-        await axios.post(
-
-          "http://localhost:5000/ai/summarize",
-
-          formData
-
-        );
+      const response = await axios.post(
+        "/api/ai/summarize",
+        formData
+      );
 
       setMessage(
         response.data.message
