@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import axios from "axios";
+import API from "../services/api";
 
 function UploadForm({ setSummary }) {
 
@@ -59,10 +60,7 @@ function UploadForm({ setSummary }) {
 
       formData.append("pdf", file);
 
-      const response = await axios.post(
-        "/api/ai/summarize",
-        formData
-      );
+      const response = await API.post("/ai/summarize", formData);
 
       setMessage(
         response.data.message
