@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://username.github.io/AI-study-notes-app",
   "proxy": "http://localhost:5000",
   "engines": {
     "node": "24.x"
