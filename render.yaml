@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: ai-study-notes-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: OPENROUTER_API_KEY
+        scope: project
+        value: your-api-key-here
+      - key: JWT_SECRET
+        scope: project
+        value: your-jwt-secret-here
+
+  - type: static_site
+    name: ai-study-notes-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        scope: project
+        value: https://ai-study-notes-backend.onrender.com
