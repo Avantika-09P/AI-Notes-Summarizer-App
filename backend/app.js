@@ -4,19 +4,12 @@ const app = express();
 
 const cors = require("cors");
 
-// Configure CORS: allow all by default (works for development).
-// In production set the FRONTEND_URL env var (e.g. https://your-frontend.onrender.com)
-// to restrict allowed origins for improved security.
-const frontendOrigin = process.env.FRONTEND_URL || null;
-if (frontendOrigin) {
-  app.use(
-    cors({ origin: frontendOrigin })
-  );
-  console.log(`CORS configured for origin: ${frontendOrigin}`);
-} else {
-  app.use(cors());
-  console.log("CORS configured: allowing all origins (development)");
-}
+// Temporary: allow all origins to unblock frontend while verifying Render env vars.
+// WARNING: this makes the API accessible from any origin. Remove or tighten
+// this before production use. Prefer setting `FRONTEND_URL` correctly and
+// restricting CORS to that origin.
+app.use(cors());
+console.warn("TEMPORARY CORS POLICY: allowing all origins. Replace with FRONTEND_URL in production.");
 
 app.use("/uploads", express.static("uploads"));
 
