@@ -212,8 +212,8 @@ Add screenshots of:
 
 B.Tech Computer Science Student | MERN Stack Developer | AI Enthusiast
 
-LinkedIn: Add Your LinkedIn Profile
-GitHub: Add Your GitHub Profile
+LinkedIn: https://www.linkedin.com/in/avantika-padhi-a40bb8303/
+GitHub: https://github.com/Avantika-09P
 
 ---
 
