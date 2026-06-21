@@ -1,6 +1,6 @@
 # 📝 AI Notes & Summarizer App
 
-An AI-powered web application that helps users create, organize, and summarize notes instantly using Generative AI. The platform transforms lengthy notes into concise, easy-to-understand summaries, improving productivity and learning efficiency.
+An AI-powered web application that enables users to create, manage, and summarize notes using Large Language Models (LLMs). The platform transforms lengthy notes into concise, easy-to-understand summaries, helping users improve productivity, learning efficiency, and knowledge retention.
 
 🌐 **Live Demo:** https://ai-notes-summarizer-app-1.onrender.com
 
@@ -12,19 +12,20 @@ An AI-powered web application that helps users create, organize, and summarize n
 
 * Create and save notes effortlessly
 * Edit and delete notes anytime
-* Organized note storage for quick access
+* Organize notes for quick access and management
 
 ### 🤖 AI-Powered Summarization
 
 * Generate concise summaries from lengthy notes
 * Extract key points automatically
 * Improve revision and information retention
+* Fast AI-powered text processing
 
 ### 🔐 Secure Authentication
 
 * User registration and login
 * JWT-based authentication
-* Protected user-specific notes
+* Protected user-specific access
 
 ### 📱 Responsive Design
 
@@ -50,15 +51,11 @@ An AI-powered web application that helps users create, organize, and summarize n
 * JWT Authentication
 * REST APIs
 
-### Database
-
-* MongoDB
-* Mongoose
-
 ### AI Integration
 
-* OpenAI API / Gemini API
-* Natural Language Processing for note summarization
+* OpenRouter API
+* DeepSeek LLM
+* Natural Language Processing (NLP)
 
 ### Deployment
 
@@ -68,7 +65,7 @@ An AI-powered web application that helps users create, organize, and summarize n
 
 ## 📂 Project Structure
 
-```bash
+```bash id="ah0mij"
 AI-Notes-Summarizer/
 │
 ├── frontend/
@@ -80,9 +77,9 @@ AI-Notes-Summarizer/
 ├── backend/
 │   ├── controllers/
 │   ├── routes/
-│   ├── models/
 │   ├── middleware/
-│   └── config/
+│   ├── config/
+│   └── utils/
 │
 ├── .env
 ├── package.json
@@ -95,7 +92,7 @@ AI-Notes-Summarizer/
 
 ### Clone the Repository
 
-```bash
+```bash id="b0jmg0"
 git clone https://github.com/your-username/ai-notes-summarizer.git
 cd ai-notes-summarizer
 ```
@@ -104,14 +101,14 @@ cd ai-notes-summarizer
 
 #### Backend
 
-```bash
+```bash id="1f9d9f"
 cd backend
 npm install
 ```
 
 #### Frontend
 
-```bash
+```bash id="84v6s4"
 cd frontend
 npm install
 ```
@@ -122,20 +119,16 @@ npm install
 
 Create a `.env` file in the backend directory:
 
-```env
+```env id="03q4io"
 PORT=5000
-
-MONGODB_URI=your_mongodb_connection_string
 
 JWT_SECRET=your_jwt_secret
 
-OPENAI_API_KEY=your_openai_api_key
-```
+OPENROUTER_API_KEY=your_openrouter_api_key 
 
-or
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 
-```env
-GEMINI_API_KEY=your_gemini_api_key
+MODEL=deepseek/deepseek-chat-v3-0324
 ```
 
 ---
@@ -144,19 +137,19 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ### Start Backend
 
-```bash
+```bash id="cxrbrj"
 npm run server
 ```
 
 ### Start Frontend
 
-```bash
+```bash id="vj4t7g"
 npm start
 ```
 
 Application will run at:
 
-```bash
+```bash id="iq5b0n"
 Frontend: http://localhost:3000
 Backend: http://localhost:5000
 ```
@@ -180,7 +173,7 @@ Add screenshots of:
 * Home Page
 * Notes Dashboard
 * AI Summary Generation
-* Authentication Pages
+* Login & Registration Pages
 
 ---
 
@@ -198,11 +191,12 @@ Add screenshots of:
 
 ## 📈 Resume Highlights
 
-* Built a full-stack MERN application with secure authentication.
-* Integrated Generative AI for intelligent text summarization.
-* Designed RESTful APIs and MongoDB database architecture.
-* Developed a responsive and user-friendly interface using React and Tailwind CSS.
-* Deployed the application on Render for public access.
+* Developed a full-stack AI-powered note management and summarization application using React.js, Node.js, and Express.js.
+* Implemented secure authentication and authorization using JWT.
+* Integrated OpenRouter API and DeepSeek LLM for intelligent text summarization.
+* Designed RESTful APIs for seamless frontend-backend communication.
+* Built a responsive and user-friendly interface using React and Tailwind CSS.
+* Deployed the application on Render for public accessibility.
 
 ---
 
@@ -213,6 +207,7 @@ Add screenshots of:
 B.Tech Computer Science Student | MERN Stack Developer | AI Enthusiast
 
 LinkedIn: https://www.linkedin.com/in/avantika-padhi-a40bb8303/
+
 GitHub: https://github.com/Avantika-09P
 
 ---
