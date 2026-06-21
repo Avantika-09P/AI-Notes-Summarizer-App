@@ -124,7 +124,7 @@ PORT=5000
 
 JWT_SECRET=your_jwt_secret
 
-OPENROUTER_API_KEY=your_openrouter_api_key 
+OPENROUTER_API_KEY=your_openrouter_api_key ( not mentioning for security reasons )
 
 OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 
