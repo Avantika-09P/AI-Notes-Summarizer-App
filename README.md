@@ -2,7 +2,7 @@
 
 An AI-powered web application that enables users to create, manage, and summarize notes using Large Language Models (LLMs). The platform transforms lengthy notes into concise, easy-to-understand summaries, helping users improve productivity, learning efficiency, and knowledge retention.
 
-🌐 **Live Demo:** https://ai-notes-summarizer-app-1.onrender.com
+🌐 **Live Demo:** \https://ai-study-notes-frontend.onrender.com/
 
 ---
 
